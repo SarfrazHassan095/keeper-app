@@ -23,3 +23,13 @@ const emojies = [
 ];
 
 export default emojies;
+
+// task form instructor:
+// extract meaning property with data in a seprate array, the ky part is each string shoulb 100 chracter long.
+
+console.log(emojies);
+const meanings = emojies.map((emoji) => {
+  return emoji.meaning.substring(0, 100);
+});
+
+console.log("Meaning array with 100 characters", meanings);
