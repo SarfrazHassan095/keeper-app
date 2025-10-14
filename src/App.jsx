@@ -2,13 +2,14 @@ import "./App.css";
 // Learning Components
 // import Calculator from "./learning/components/Calculator";
 // import Header from "./learning/components/Header";
+// import Card from "./learning/components/contact-list/card";
+// import contactList from "./learning/utils/contscts";
 
 // Keeper app components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Note from "./components/Note";
-import Card from "./learning/components/contact-list/card";
-import contactList from "./learning/utils/contscts";
+import EmojiPediaApp from "./learning/components/emojiApp/Main";
 function App() {
   {
     /* <div className="w-11/12 mx-auto mt-6 grid grid-cols-3 gap-3"> */
@@ -17,13 +18,17 @@ function App() {
     <div className="h-screen overflow-auto bg-slate-100">
       <Header />
 
-      <div className="w-11/12 mx-auto mt-6 flex justify-start gap-3">
+      {/* <div className="w-11/12 mx-auto mt-6 flex justify-start gap-3">
         <Note
           title={"title one"}
           content={
             "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem temporibus corporis ea iusto nihil sit nobis expedita, dolorum minus facilis."
           }
         />
+      </div> */}
+
+      <div className="w-11/12 mx-auto my-4">
+        <EmojiPediaApp />
       </div>
 
       <div className="absolute w-full bottom-0 ">
